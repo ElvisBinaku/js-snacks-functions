@@ -2,12 +2,21 @@
 
 const word = 'javascript';
 
-
 // Dichiara la funzione qui.
+function cercaVocali(parola)
 
+    const vocali = ['a', 'e', 'i', 'o', 'u'];
+   
+    let numeroVocali = 0;
+    for (let index = 0; index < parola.length; index++) {
+        if (vocali.includes(parola[index])) {
+            numeroVocali++
+        }
+        return numeroVocali
+    }
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
+console.log(cercaVocali(word))
+ 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
